@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ahnaf}{Hossain}{ \urlstyle{same}\url{http://sakeebhossain.me} \\
+\href{mailto:sakeeb.hossain@mail.utoronto.ca}{sakeeb.hossain@mail.utoronto.ca} | 416.438.6167
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Toronto}
+\descript{BS in Computer Science with Minor in Statistics}
+Software Engineering Stream\\
+\location{Expected May 2018 | Toronto, ON}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient}
+Python \textbullet{}   JavaScript \textbullet{} Bash \textbullet{} C \\
+Java \textbullet{} HTML \textbullet{} CSS \\ 
+\location{Experience}
+PHP \textbullet{} Flask \textbullet{} SQL \textbullet{} R \textbullet{} Assembly \\
+\location{Frameworks \& Technologies:}
+React \textbullet{} BootStrap \textbullet{} Android \textbullet{} Git
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+\subsection{Areas of Comp. Science}
+Graph Theory \\
+Big Data\\
+Machine Learning \\
+Security \& Cryptography \\
+Graph Theory \\
+\location{Favorite Algorithm:}
+Ford-Fulkerson (Max-Flow Min-Cut)
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\href{https://github.com/sakeebhossain}{\custombold{github}.com/sakeebhossain} \\
+\href{https://www.linkedin.com/in/sakeebhossain}{\custombold{linkedin}.com/in/sakeebhossain} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EMPLOYMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment}
+
+\runsubsection{CIBC}
+\descript{| Application Developer }
+\location{Jan 2017 – May 2017 | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on the YouTube Captions team in primarily vanilla Javascript and Python to plan, design and develop the full stack implementation of a new framework to add and edit Automatic Speech Recognition captions.
+\item Created a backbone.js-like framework for the Captions editor.
+\item All code was reviewed, perfected, and pushed to production.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ministry of Government Services}
+\descript{| Web Developer}
+\location{ Media Delivery Service Team | Sept 2016 – Dec 2016 | Toronto, ON}
+\begin{tightemize}
+\item Upgraded internal browser video player from Flash to JW Player to add support from HTML5 video.
+\item Created web app in jQuery and PHP that loads a video with setting specified by the user (resolution, caption language, described audio, etc.). Parses XML files to gather sources for specified settings..
+\item Added feature that generates WordPress shortcode for videos so users can embed them in their own sites.
+\item Wrote automated tests using Jasmine JS framework to test websites for design and accessibility compliance.
+\item Gained experience with Agile and SCRUM development methodologies.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PERSONAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+\runsubsection{Meerar}
+\descript{McHacks| Montréal, QC}
+\location{Sept 2016 – Dec 2016 | Toronto, ON}
+\begin{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{LeapText}
+\descript{| Web Developer}
+\location{Sept 2016 – Dec 2016 | Toronto, ON}
+\begin{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{fillme.org}
+\descript{| Web Application}
+\location{Sept 2016 – Dec 2016 | Toronto, ON}
+\begin{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TabCapture}
+\descript{| Chrome Extension}
+\location{Sept 2016 – Dec 2016 | Toronto, ON}
+\begin{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\begin{tabular}{rll}
+2017	     & Recipeient of Lexalytics API Prize and CPS Prize at McHacks\\
+2017	     & 3rd Place Microsoft Coding Competition @ UofToronto\\
+2017     & Winner of "Most Creative Hack" at HackTheValley \\
+2016	     & 2nd Place Winner at UTSC FinanceHacks\\
+2015	     & Recognized for best overall design, for final class project (CSCB07)\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
